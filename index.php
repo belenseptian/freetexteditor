@@ -12,25 +12,10 @@
 			height:300px;
 			overflow-y:auto;
 		}
-		#container-box,#container-box1,#container-box2,#container-box3
+		#container-box,#container-box1,#container-box2,#container-box3,#container-box0
 		{
 			padding:5px;
 			background-color:#ccc;
-		}
-		
-		#file
-		{
-			display:none;
-		}
-		
-		#b,#i,#u,#al,#ac,#l
-		{
-			background-color: Transparent;
-			background-repeat:no-repeat;
-			border: none;
-			cursor:pointer;
-			overflow: hidden;
-			outline:none;
 		}
 		form
 		{
@@ -61,14 +46,15 @@
 					<button id="al"><i class="fa fa-align-left"></i></button>
 					<button id="ac"><i class="fa fa-align-center"></i></button>
 					<button id="l"><i class="fa fa-link"></i></button>
-					<form style="cursor:pointer;" id="uploadimage" action="" method="post" enctype="multipart/form-data">
-						<input style="cursor:pointer;" type="file" name="file" id="file" class="inputfile inputfile-1" required>
-						<label style="cursor:pointer;" for="file">
-							<i style="cursor:pointer;" id="#imm" class="fa fa-image"></i>
-						</label>
+					<button id="imge"><i class="fa fa-image"></i></button>
+					
+				
+				</div>
+				<div style="display:none;" id="container-box0">
+					<form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+						<input type="file" name="file" id="file" class="inputfile inputfile-1" required>
 						<input style="display:none;" class="myup" type="submit" value="Upload" class="submit" />
 					</form>
-				
 				</div>
 				<div style="display:none;" id="container-box1"><input type="text" class="form-control" name="tautlink" id="tautlink" placeholder="Link; Example : http://www.google.com"></div>
 				<div style="display:none;" id="container-box2"><input type="text" class="form-control" name="tautlabel" id="tautlabel" placeholder="Label; Example : Google"></div>
@@ -184,6 +170,7 @@
 				
 				if(validateFileType()==true)
 				{
+					$("#container-box0").css("display","none");
 					bootbox.dialog({ closeButton: true, message: 'Only image files are allowed!', onEscape: function() {
 						restoreSelection();
 					} });
@@ -220,6 +207,7 @@
 					{
 						if(data=="error")
 						{
+							$("#container-box0").css("display","none");
 							bootbox.hideAll();
 							//failed to upload, please check connection
 							bootbox.dialog({ closeButton: true, message: 'Upload is failed, please check your internet connection and ensure that image formats are ["jpeg","jpg","png",".gif"]!', onEscape: function() {
@@ -228,6 +216,7 @@
 						}
 						else if(data=="gagal")
 						{
+							$("#container-box0").css("display","none");
 							bootbox.hideAll();
 							//image size is too large
 							bootbox.dialog({ closeButton: true, message: 'Upload is failed, image exceeds the limit of 500 KB!', onEscape: function() {
@@ -237,6 +226,7 @@
 						}
 						else
 						{
+							$("#container-box0").css("display","none");
 							//success
 							bootbox.hideAll();
 							restoreSelection();
@@ -247,6 +237,7 @@
 					},
 					error: function(xhr)
 					{
+						$("#container-box0").css("display","none");
 						bootbox.hideAll();
 						//failed to upload, please check connection
 						bootbox.dialog({ closeButton: true, message: 'Upload is failed, please check your internet connection and ensure that image formats are ["jpeg","jpg","png",".gif"]!', onEscape: function() {
@@ -256,8 +247,9 @@
 				});
 			}));
 			
-			$("#file").click(function(){
+			$("#imge").click(function(){
 				saveSelection();
+				$("#container-box0").css("display","block");
 			});
 			
 			$("#l").click(function(){
@@ -268,12 +260,14 @@
 			});
 			
 			$("#bum").click(function(){
+				$("#container-box0").css("display","none");
 				$("#container-box1").css("display","none");
 				$("#container-box2").css("display","none");
 				$("#container-box3").css("display","none");
 			});
 			
 			$("#bum").keydown(function(){
+				$("#container-box0").css("display","none");
 				if($("#tautlabel").val()=="" || $("#tautlink").val()=="")
 				{
 					$("#container-box1").css("display","none");
