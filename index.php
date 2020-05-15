@@ -149,9 +149,7 @@
 			$("#mytaut").click(function(){
 				if($("#tautlabel").val()=="" || $("#tautlink").val()=="")
 				{
-					bootbox.dialog({ closeButton: true, message: 'Please fill all the inputs!', onEscape: function() {
-						restoreSelection();
-					} });
+					bootbox.dialog({ closeButton: true, message: 'Please fill all the inputs!' });
 				}
 				else
 				{
