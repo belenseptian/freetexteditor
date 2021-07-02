@@ -4,30 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	
-	<style type="text/css">
-		#bum
-		{
-			padding:5px;
-			border:1px solid #ccc;
-			height:300px;
-			overflow-y:auto;
-		}
-		#container-box,#container-box1,#container-box2,#container-box3,#container-box0
-		{
-			padding:5px;
-			background-color:#ccc;
-		}
-		form
-		{
-			display:inline;
-			margin:0px;
-			padding:0px;
-		}
-	
-		
-	</style>
-    <title>Free HTML Text Editor</title>
+	<link rel="stylesheet" href="css/custom.css">
+    	<title>Free HTML Text Editor</title>
 </head>
 <body>
 	<div class="container-fluid">
