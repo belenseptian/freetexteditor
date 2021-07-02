@@ -22,7 +22,13 @@ into
 
 document.execCommand('insertHTML',false,"<*img class='img-responsive' src='../php/uploaded_image/"+data+"'>"); //you may remove * symbol
 
-![ScreenHunter 0566](https://user-images.githubusercontent.com/42172216/124319403-cd8c4a00-db97-11eb-971e-d21e4cd46d37.png)
+Screenshots :
+
+![ScreenHunter 07 (01)](https://user-images.githubusercontent.com/42172216/124319694-3c69a300-db98-11eb-865e-25cd848829f7.png)
+
+
+![ScreenHunter 08](https://user-images.githubusercontent.com/42172216/124319662-31167780-db98-11eb-886b-dc5e0c569710.png)
+
 
 
 Thank You
