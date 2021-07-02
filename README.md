@@ -29,12 +29,5 @@ Screenshots :
 
 ![ScreenHunter 08](https://user-images.githubusercontent.com/42172216/124319662-31167780-db98-11eb-886b-dc5e0c569710.png)
 
-
-
-Thank You
-
-Belen Septian
-
-
   
  
