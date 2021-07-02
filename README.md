@@ -2,6 +2,7 @@
 
 This is free HTML text editor built from rangy library, bootstrap, and jquery. This code supports custom image upload by which you can upload image to your own server throughout ajax request. You can edit as per your need and don't forget to share to anyone who needs it.
 
+
 P.S. : 
 
 If you encounter an ajax error while uploading the picture, please change the following line in js/custom.js
@@ -20,6 +21,8 @@ document.execCommand('insertHTML',false,"<*img class='img-responsive' src='php/u
 into
 
 document.execCommand('insertHTML',false,"<*img class='img-responsive' src='../php/uploaded_image/"+data+"'>"); //you may remove * symbol
+
+
 
 Thank You
 
