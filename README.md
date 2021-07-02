@@ -6,10 +6,6 @@ Thank You
 
 Belen Septian
 
-Demo :
-
-http://iotmq135ou.atspace.cc/demo/texteditor/
-
 
   
  
