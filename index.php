@@ -27,7 +27,7 @@
 	
 		
 	</style>
-    <title>HTML Text Editor</title>
+    <title>Free HTML Text Editor</title>
 </head>
 <body>
 	<div class="container-fluid">
