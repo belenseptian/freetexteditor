@@ -1,5 +1,5 @@
 function gEBI(id) {
-		return document.getElementById(id);
+    return document.getElementById(id);
 }
 
 var savedSel = null;
