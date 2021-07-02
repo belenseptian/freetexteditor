@@ -5,6 +5,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="shortcut icon" href="fonts/favicon.ico">
     	<title>Free HTML Text Editor</title>
 </head>
 <body>
