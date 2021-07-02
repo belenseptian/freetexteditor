@@ -49,13 +49,13 @@
 		</div>
 	</div> 						
 	<script type="text/javascript" src="rangi-libs/rangy-core.js"></script>
-    <script type="text/javascript" src="rangi-libs/rangy-selectionsaverestore.js"></script>
+	<script type="text/javascript" src="rangi-libs/rangy-selectionsaverestore.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/custom-file-input.js"></script>
 	<script type="text/javascript" src="js/bootbox.min.js"></script>
 
-    <script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 
 </body>
 </html>
