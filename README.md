@@ -22,6 +22,7 @@ into
 
 document.execCommand('insertHTML',false,"<*img class='img-responsive' src='../php/uploaded_image/"+data+"'>"); //you may remove * symbol
 
+![ScreenHunter 0566](https://user-images.githubusercontent.com/42172216/124319403-cd8c4a00-db97-11eb-971e-d21e4cd46d37.png)
 
 
 Thank You
