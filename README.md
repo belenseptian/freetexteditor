@@ -15,11 +15,11 @@ url: "../php/ajax_php_file.php"
 
 If the image doesn't show after it's successfully uploaded, please change the following line in js/custom.js
 
-document.execCommand('insertHTML',false,"<img class='img-responsive' src='php/uploaded_image/"+data+"'>"); //show preview of the image
+document.execCommand('insertHTML',false,"<*img class='img-responsive' src='php/uploaded_image/"+data+"'>"); //show preview of the image
 
 into
 
-document.execCommand('insertHTML',false,"<img class='img-responsive' src='../php/uploaded_image/"+data+"'>"); //show preview of the image
+document.execCommand('insertHTML',false,"<*img class='img-responsive' src='../php/uploaded_image/"+data+"'>"); //show preview of the image
 
 
 Thank You
